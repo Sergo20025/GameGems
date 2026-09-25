@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+boto3
+python-multipart
+python-dotenv
+pytest
+pytest-asyncio
+httpx
+pandas
+joblib
+requests
+scikit-learn==1.6.1

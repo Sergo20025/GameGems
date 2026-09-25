@@ -1,0 +1,113 @@
+/* Общие стили */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #222;
+}
+
+/* Центровка главного контейнера */
+.container {
+  height: 100vh; /* было: min-height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0; /* было: 40px 20px */
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Подзаголовок */
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Параграфы */
+p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+/* Кнопки */
+button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  margin: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+  font-weight: 600;
+}
+
+button.login {
+  background-color: #1976d2;
+  color: white;
+}
+button.login:hover {
+  background-color: #1565c0;
+}
+
+button.create {
+  background-color: #4caf50;
+  color: white;
+}
+button.create:hover {
+  background-color: #43a047;
+}
+
+button.admin {
+  background-color: #ff9800;
+  color: white;
+}
+button.admin:hover {
+  background-color: #f57c00;
+}
+
+button.back {
+  background-color: #9e9e9e;
+  color: white;
+}
+button.back:hover {
+  background-color: #757575;
+}
+
+/* Адаптивность */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+input[type="number"] {
+  padding: 10px 14px;
+  font-size: 1rem;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+  text-align: center;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input[type="number"]:focus {
+  border-color: #1976d2;
+}

@@ -1,0 +1,53 @@
+.quick-sell-zone {
+  border: 2px dashed #888;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fefefe;
+  text-align: center;
+  /* Удаляем отступ сверху */
+  margin-top: 0;
+  /* Прижимаем к верху флекс-контейнера */
+  align-self: flex-start;
+}
+
+.sell-prices {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.sell-confirm-modal {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.sell-confirm-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.sell-confirm-buttons .yes {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sell-confirm-buttons .no {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+

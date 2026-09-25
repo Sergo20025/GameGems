@@ -1,0 +1,61 @@
+.account-container {
+  padding: 30px;
+  background: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.account-container h2 {
+  margin-bottom: 20px;
+}
+
+.account-container button {
+  margin: 10px 5px;
+  padding: 10px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.account-container button:hover {
+  background-color: #145ea8;
+}
+
+.tx-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tx-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+
+.tx-icon {
+  font-size: 1.3em;
+}
+
+.tx-type {
+  font-weight: bold;
+  min-width: 80px;
+}
+
+.tx-amount {
+  color: green;
+  font-weight: bold;
+}
+
+.tx-block, .tx-time {
+  font-size: 0.9em;
+  color: #666;
+}

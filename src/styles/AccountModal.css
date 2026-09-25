@@ -1,0 +1,84 @@
+.modal-backdrop { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-window {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 35px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #222;
+  font-family: sans-serif;
+}
+
+.modal-window h3 {
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  color: #222;
+}
+
+.modal-window label {
+  font-weight: 500;
+  color: #333;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-window input[type="text"] {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  color: #111;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal-window input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.modal-window .actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.modal-window .actions button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.modal-window .actions button.cancel {
+  background: #ddd;
+  color: #333;
+}
+
+.modal-window .actions button.confirm {
+  background: #4caf50;
+  color: white;
+}
